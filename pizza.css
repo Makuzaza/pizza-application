@@ -1,0 +1,159 @@
+body {
+    font-family: "Lato", sans-serif; 
+    color: #333; 
+    margin: 5px;
+    line-height: 1.1;
+    border-style: solid;
+    border-color: rgb(220, 226, 226);
+    height: 95vh;
+}
+
+#boxes {
+    background: url("https://images.unsplash.com/photo-1584782930656-e2bc1e803fc7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8cGl6emF8fHx8fHwxNjkzODE2Njc0&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600") no-repeat center center/cover;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h1 span { 
+    background-color: rgb(237, 236, 126); 
+    padding: 10px;
+}
+
+p span {
+    background-color: rgb(195, 235, 150);
+    padding: 1px 5px 1px 5px; 
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.row {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    justify-items: center;
+}
+
+label {
+    text-align: center;
+    width: 150px;
+    margin: 20px;
+}
+
+.heads {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#name {
+    grid-row: 1 / span 1;
+    width: 400px;
+    background-color: #ecf3cb;
+    text-shadow: none;
+    color: #333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: #333;
+    border-style: dashed;
+}
+
+#nameclient {
+    width: 250px;
+}
+
+#size {
+    grid-row: 2 / span 1;
+    width: 400px;
+    background-color: #ecf3cb;
+    text-shadow: none;
+    color: #333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: #333;
+    border-style: dashed;
+}
+
+#delivery_style {
+    grid-row: 3 / span 1;
+    width: 400px;
+    background-color: #ecf3cb;
+    text-shadow: none;
+    color: #333;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: #333;
+    border-style: dashed;
+}
+
+#toppings {
+    grid-row: 1 / span 3;
+    background-color: #ecf3cb;
+    color: #333;
+    padding: 10px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: #333;
+    border-style: dashed;
+}
+
+input {
+    width: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0px 0px 0px 30px;
+}
+
+#delivery {
+    width: 280px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0px 
+    0px 0px 50px;
+}
+
+#answers {
+    padding: 20px;
+    color: #333;
+    background-color: #ecf3cb; 
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: #333;
+    border-style: dashed;
+}
+
+button {
+    background-color: #4ed24c;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    margin: 20px;
+    width: 300px;
+    font-size: 25px;
+}
+
+.button {
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+  }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pizza</title>
+    <link rel="stylesheet" href="pizza.css" />
+    <script src="pizza.js" async></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="boxes">
+    <main>
+      <h1><span>Pizza order</span></h1>
+      <p>
+        <span>
+          Please, fill the form to personalize your pizza order and we will
+          calculate the total cost based on your choice:
+        </span>
+      </p>
+
+      <div class="row">
+        <div id="name">
+          <div class="heads">1. Your name</div>
+          <label for="name"
+            ><input
+              class="name"
+              type="text"
+              name="name"
+              id="nameclient"
+              placeholder="enter your name"
+          /></label>
+        </div>
+        <div id="size">
+          <div class="heads">2. Pizza Size:</div>
+          <label for="size1"
+            ><input
+              type="radio"
+              id="size1"
+              value="7.5"
+              name="size"
+              checked
+            />For 2 servings (7,50€)</label
+          ><br />
+          <label for="size2"
+            ><input type="radio" id="size2" value="10.5" name="size" />For 4
+            servings (10,50€)</label
+          ><br />
+          <label for="size3"
+            ><input type="radio" id="size3" value="12.5" name="size" />For 6
+            servings (12,50€)</label
+          ><br />
+          <label for="size4"
+            ><input type="radio" id="size4" value="15.5" name="size" />For 8
+            servings (15,50€)</label
+          >
+        </div>
+
+        <div id="delivery_style">
+          <div class="heads">4. Delivery Options:</div>
+          <select id="delivery" name="delivery" size="1">
+            <option value="delivery home">Delivery home, +5€</option>
+            <option value="eat in restaurant">Eat in, 0€</option>
+            <option value="pickup">Pickup food, 0€</option>
+          </select>
+        </div>
+        <div id="toppings">
+          <div class="heads">3. Toppings:</div>
+          4 toppings - are free,<br />
+          every additional topping - €0.50 each<br />
+          <label for="topping1"
+            ><input
+              type="checkbox"
+              id="topping1"
+              value="jalapeno"
+              name="toppings"
+            />jalapeno</label
+          ><br />
+          <label for="topping2"
+            ><input
+              type="checkbox"
+              id="topping2"
+              value="ham"
+              name="toppings"
+            />ham</label
+          ><br />
+          <label for="topping3"
+            ><input
+              type="checkbox"
+              id="topping3"
+              value="toasted bacon"
+              name="toppings"
+            />toasted bacon</label
+          ><br />
+          <label for="topping4"
+            ><input
+              type="checkbox"
+              id="topping4"
+              value="grilled chicken"
+              name="toppings"
+            />grilled chicken</label
+          ><br />
+          <label for="topping5"
+            ><input
+              type="checkbox"
+              id="topping5"
+              value="pepperoni"
+              name="toppings"
+            />pepperoni</label
+          ><br />
+          <label for="topping6"
+            ><input
+              type="checkbox"
+              id="topping6"
+              value="salami"
+              name="toppings"
+            />salami</label
+          ><br />
+          <label for="topping7"
+            ><input
+              type="checkbox"
+              id="topping7"
+              value="mushrooms"
+              name="toppings"
+            />mushrooms</label
+          ><br />
+          <label for="topping8"
+            ><input
+              type="checkbox"
+              id="topping8"
+              value="avocado"
+              name="toppings"
+            />avocado</label
+          ><br />
+          <label for="topping9"
+            ><input
+              type="checkbox"
+              id="topping9"
+              value="pineapple"
+              name="toppings"
+            />pineapple</label
+          ><br />
+          <label for="topping10"
+            ><input
+              type="checkbox"
+              id="topping10"
+              value="cherry tomato"
+              name="toppings"
+            />cherry tomato</label
+          ><br />
+          <label for="topping11"
+            ><input
+              type="checkbox"
+              id="topping11"
+              value="olive"
+              name="toppings"
+            />olive</label
+          ><br />
+          <label for="topping12"
+            ><input
+              type="checkbox"
+              id="topping12"
+              value="paprika"
+              name="toppings"
+            />paprika</label
+          ><br />
+          <label for="topping13"
+            ><input
+              type="checkbox"
+              id="topping13"
+              value="onion"
+              name="toppings"
+            />onion</label
+          ><br />
+          <label for="topping14"
+            ><input
+              type="checkbox"
+              id="topping14"
+              value="salad"
+              name="toppings"
+            />salad</label
+          ><br />
+          <label for="topping15"
+            ><input
+              type="checkbox"
+              id="topping15"
+              value="parmesan cheese"
+              name="toppings"
+            />parmesan cheese
+          </label>
+        </div>
+      </div>
+      <p id="answers">Please write your name and select options</p>
+      <!-- <div class="button">
+        <button onclick="pizzaPrice()">Make order</button>
+      </div> -->
+    </main>
+  </body>
+</html>
